@@ -1,0 +1,55 @@
+###
+GET http://localhost:3000/api/tasks
+###
+GET http://localhost:3000/api/tasks?size=5&page=2
+###
+GET http://localhost:3000/api/tasks?size=5&page=0&title=wix
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+GET http://localhost:3000/api/tasks/604d7ca23533f708773bdc5c
+
+###
+GET http://localhost:3000/api/tasks/604d7ca23533f708773bdc5f
+
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title":"hacer un sitio web en React",
+  "description":"trabajo freelance"
+}
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title":"hacer un sitio web en React",
+  "description":"trabajo freelance",
+  "done": true
+}
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "description":"trabajo freelance",
+  "done": true
+}
+
+
+###
+DELETE http://localhost:3000/api/tasks/604d7b1aa443f30859039054
+
+###
+PUT http://localhost:3000/api/tasks/604d7ca23533f708773bdc5c
+Content-Type: application/json
+
+{
+  "title":"hacer un sitio web en wix"
+}

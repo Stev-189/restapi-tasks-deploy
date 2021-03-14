@@ -1,0 +1,31 @@
+npm init -y
+npm i express
+npm i @babel/core @babel/cli @babel/node @babel/preset-env -D
+.babelrc (a)
+// npx es para ejecutar funciones propias
+// pàra ejecutar npx babel-node src/index.js
+//para escucha del servidor cunado algo cambie
+package.json ("start": "babel-node src/index.js")
+npm i nodemon -D
+package.json ("start": "nodemon src/index.js --exec babel-node") npm start
+package.json ("build": "babel src --out-dir dist") npm run build
+npm i mongoose
+.env(a)//variables de entorno
+npm i dotenv
+--// vscode REST Client
+
+npm i morgan // midelware
+npm i cors // para comuniciones netre servidores de forma local 
+npm i mongoose-paginate-v2 // paginacion mongose
+npm i -D @babel/plugin-transform-runtime
+.babelrc = 
+	{
+		"presets":[
+			"@babel/env"
+		], 
+		"plugins": ["@babel/trasnform-runtime"]
+	}
+
+package.json ("dev": "nodemon src/index.js --exec babel-node") npm run dev
+npm run build
+package.json ("start":"node dist/index.js"") despues de hacer un build npm start
